@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>11</zoom_level>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>1111</x>
+      <y>286</y>
+      <w>110</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>Turning 
+Randomly
+bg=0xAAAAFF</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>396</x>
+      <y>286</y>
+      <w>110</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>Moving
+Forward
+bg=0xAAAAFF</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>748</x>
+      <y>286</y>
+      <w>110</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>Reversing
+bg=0xAAAAFF</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>396</x>
+      <y>517</y>
+      <w>825</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>Hiding
+bg=0xAAAAFF</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>495</x>
+      <y>286</y>
+      <w>275</w>
+      <h>55</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+_FRONT_***_BUMP_PRESSED_
+set motors to reverse</panel_attributes>
+    <additional_attributes>10.0;20.0;230.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>0</x>
+      <y>396</y>
+      <w>110</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>State 1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>0</x>
+      <y>605</y>
+      <w>110</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>State 2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>11</x>
+      <y>429</y>
+      <w>110</w>
+      <h>198</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+FL_BUMP 
+        or 
+_FR_BUMP_</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;160.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>165</x>
+      <y>396</y>
+      <w>110</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>State 1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>165</x>
+      <y>605</y>
+      <w>110</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>State 2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>176</x>
+      <y>429</y>
+      <w>110</w>
+      <h>198</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+FL_BUMP 
+     and 
+_FR_BUMP_</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;160.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>836</x>
+      <y>297</y>
+      <w>308</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+_FRONT_***_BUMP_RELEASED_
+set motors to turn right
+init timer to a random value [0 - 1000 ms]</panel_attributes>
+    <additional_attributes>20.0;20.0;250.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>462</x>
+      <y>165</y>
+      <w>737</w>
+      <h>143</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+_NAV_TIMER_EXPERIED_
+set motors to forward</panel_attributes>
+    <additional_attributes>650.0;110.0;650.0;20.0;10.0;20.0;10.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLSpecialState</id>
+    <coordinates>
+      <x>418</x>
+      <y>110</y>
+      <w>22</w>
+      <h>22</h>
+    </coordinates>
+    <panel_attributes>type=initial</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>418</x>
+      <y>121</y>
+      <w>176</w>
+      <h>187</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+
+m1=set motors to forward</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;150.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>418</x>
+      <y>319</y>
+      <w>154</w>
+      <h>220</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+_ENTERED_DARK_
+stop motors</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;180.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>759</x>
+      <y>319</y>
+      <w>154</w>
+      <h>220</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+_ENTERED_DARK_
+stop motors</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;180.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1155</x>
+      <y>319</y>
+      <w>154</w>
+      <h>220</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+_ENTERED_DARK_
+stop motors</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;180.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>803</x>
+      <y>231</y>
+      <w>363</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+_FRONT_***_BUMP_PRESSED_
+set motors to reverse</panel_attributes>
+    <additional_attributes>310.0;50.0;290.0;20.0;30.0;20.0;10.0;50.0</additional_attributes>
+  </element>
+</diagram>
